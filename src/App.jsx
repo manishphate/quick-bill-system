@@ -1,14 +1,13 @@
-import React from 'react'
-import Home from './pages/home/Home'
-import SignIn from './components/authentication/signin/SignIn'
+import React from "react";
+
+import Landing from "./pages/LandingPage/Landing.jsx";
 
 const App = () => {
   return (
-    <div>
-      <Home/>
-      <SignIn/>
-    </div>
-  )
-}
+    <>
+      <Landing/>
+    </>
+  );
+};
 
-export default App
+export default App;
