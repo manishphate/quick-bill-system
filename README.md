@@ -35,14 +35,14 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
 
-   git clone <repository-url> 
+   git clone <repository-url>  
    cd frontend-quickbill
 
-2. **Install dependencies: Ensure you have Node.js installed. Then, run:** 
+2. **Install dependencies: Ensure you have Node.js installed. Then, run:**  
     npm install
 
-3. **Run the development server: Start the Vite development server:** 
-    npm run dev 
+3. **Run the development server: Start the Vite development server:**  
+    npm run dev  
 This will open the app in your default browser at http://localhost:5173.
 
 
