@@ -10,6 +10,9 @@
   align-items: center;
   padding: 20px;
   background-color: #1f1f1f;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
 }
 .logo {
   align-items: center;
@@ -17,7 +20,7 @@
   color: white;
 }
 
-.list {
+.navSec ul {
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -48,4 +51,15 @@
   cursor: pointer;
   background-color: red;
   color: white;
+}
+@media (max-width: 768px) {
+  .navSec {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navSec ul {
+    flex-direction:column;
+    gap: 100px;
+  }
 }
