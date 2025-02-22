@@ -1,0 +1,29 @@
+.btn {
+  /* border: 2px solid red; */
+  height: 50px;
+  width: 180px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.primary {
+  /* border: none; */
+  background-color: #f5ba31;
+  color: black;
+  border: none;
+}
+.primary:hover {
+  background-color: #f7ba2ae2;
+}
+.secondery {
+  background-color: #006fda;
+  color: white;
+  transition: background-color 1s ease;
+}
+.secondery:hover {
+  background-color: white;
+  color: black;
+}

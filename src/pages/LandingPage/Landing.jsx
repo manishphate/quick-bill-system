@@ -1,20 +1,27 @@
 import React from "react";
 import styel from "./Landing.module.css";
-import LodingNavbar from "../LoadingNavBar/LodingNavbar.jsx";
-import BtnComp from "./btnComp.jsx";
+import LodingNavbar from "./Components/LoadingNavBar/LodingNavbar.jsx";
+import BtnComp from "./Components/BtnComponents/BtnComp.jsx";
 import lodingImg1 from "../../assets/lodingPageimg1.webp";
-import LeftCard from "./LeftCard.jsx";
+import LeftCard from "./Components/Cards/LeftCard/LeftCard.jsx";
 
 import lCimg1 from "../../assets/leftCardimg1.png";
 import lCimg2 from "../../assets/leftCarding2.jpeg";
 import lCimg3 from "../../assets/leftCardImg3.avif";
 
 import quatationImg from "../../assets/landingDoubleQuatationImg.svg";
+import UserFevCard1 from "./Components/Cards/UserFavroiteCards/UserFevCard1.jsx";
+
+import userFevCardImag1 from "../../assets/userFevCard1Img1.png";
+import userFevCardImag2 from "../../assets/userFevCardImg2.png";
+import userFevCardImag3 from "../../assets/userFevCardImg3.png";
+
+import btoomImg1 from "../../assets/landingBottomImg1.png";
 
 const Landing = () => {
   return (
     <>
-      <LodingNavbar />
+      {/* <LodingNavbar /> */}
       {/* ----------------- Top container --------------------------- */}
       <div className={styel.mSection1}>
         <div className={styel.headingContent}>
@@ -25,19 +32,9 @@ const Landing = () => {
             Manage end-to-end accounting—from banking & e-invoicing to inventory
             & payroll with the best accounting software in India.
           </p>
-          <div className={styel.btn}>
-            <BtnComp
-              name="Start free trial"
-              bgColor="#f5ba31"
-              border="none"
-              color="black"
-            />
-            <BtnComp
-              name="Request a demo"
-              bgColor="#006fda"
-              color="white"
-              hoverColor="red"
-            />
+          <div className={styel.botn}>
+            <BtnComp name="Start free trial" variant="primary" />
+            <BtnComp name="Request a demo" variant="secondery" />
           </div>
           <div className={styel.imgCont}>
             <img src={lodingImg1} alt="" />
@@ -74,8 +71,62 @@ const Landing = () => {
         <div className={styel.right}>
           <div>
             <img src={quatationImg} alt="" />
-            <h1>I TRUST  <br /><span>ZOHO&nbsp;BOOKS</span><br /> FOR MY  <br />BUSINESS</h1>
+            <h1>
+              I TRUST <br />
+              <span>QUICK&nbsp;BILL</span>
+              <br /> FOR MY <br />
+              BUSINESS
+            </h1>
           </div>
+        </div>
+      </div>
+      {/* ------------------------ user Feverote Section ---------------------------- */}
+      <div className={styel.userFevSect}>
+        <div className={styel.userCont}>
+          <p>User favorites</p>
+          <h1>
+            Do it all,
+            <br />
+            and then some more!
+          </h1>
+          <div className={styel.cardCont}>
+            <UserFevCard1
+              width="700px"
+              head="Receivables"
+              paragraph="Raise tax-compliant, professional invoices and quotes in no time.
+                       Offer multiple payment options, automate invoices and reminders, and
+                       send online payment links."
+              img={userFevCardImag1}
+            />
+            <UserFevCard1
+              width="535px"
+              head="Payables"
+              paragraph="Track vendor bills and other expenses easily. Add recurring expenses. Include client expenses on invoices. Make payments from Quick-Bill with partner bank integrations."
+              img={userFevCardImag2}
+            />
+          </div>
+          <UserFevCard1
+            width="170vh"
+            head="Payables"
+            paragraph="Track vendor bills and other expenses easily. Add recurring expenses. Include client expenses on invoices. Make payments from Quick-Bill with partner bank integrations."
+            img={userFevCardImag3}
+          />
+        </div>
+      </div>
+      {/* -------------------- bottom section --------------------------- */}
+
+      <div className={styel.bottomSect}>
+        <div className={styel.bottomCont}>
+          <img src={btoomImg1} alt="" />
+         <div className={styel.content}>
+         <h1>Your accounting is now in your <span>pocket</span> </h1>
+          <p>
+            Make accounting even more convenient by bringing portability through
+            the <b>Quick-Bill</b> app for mobiles.
+            Download the app for Android and iOS
+            and take your accounting everywhere.
+          </p>
+         </div>
         </div>
       </div>
     </>

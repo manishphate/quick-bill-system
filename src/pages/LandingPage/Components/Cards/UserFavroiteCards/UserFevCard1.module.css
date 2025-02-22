@@ -1,0 +1,28 @@
+.cardSec {
+  /* height: 500px; */
+  /* width: 700px; */
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 20px;
+  color: white;
+  padding: 25px;
+  display: flex;
+  /* justify-content: ; */
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.cardSec h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.cardSec p {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.cardSec img{
+    /* width: 99%; */
+    /* width: 600px; */
+    border-radius: 10px;
+  }

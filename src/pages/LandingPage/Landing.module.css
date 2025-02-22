@@ -33,12 +33,12 @@
   text-align: center;
   color: white;
 }
-.btn {
+.botn {
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: blue;
+
   gap: 20px;
 }
 
@@ -81,11 +81,9 @@
   font-size: 30px;
   color: #999898;
 }
-hr{
+hr {
   /* color:#0a0909; */
   width: 95%;
-  
-  
 }
 
 .right {
@@ -100,7 +98,7 @@ hr{
   align-items: center;
   flex-direction: column;
 }
-.right div{
+.right div {
   /* width: 300px; */
   /* border: 2px solid red; */
   display: flex;
@@ -109,16 +107,94 @@ hr{
   flex-direction: column;
   gap: 20px;
 }
-.right div h1{
+.right div h1 {
   font-size: 40px;
   text-align: center;
   line-height: 35px;
 }
-span{
+span {
   font-size: 50px;
   /* border: 2px solid white; */
-  color:blue;
+  color: blue;
   /* text-decoration: tomato; */
-  -webkit-text-stroke:2px ,black;
-  text-shadow: 3px 3px 6px rgba(0,0,0, 0.6);
+  -webkit-text-stroke: 2px, black;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------------- user Fevrote Section -------------- */
+.userFevSect {
+  /* height: 100vh; */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userCont {
+  /* height: 90%; */
+  padding: 40px 20px 40px 20px;
+  width: 90%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.userCont p {
+  font-size: 18px;
+  color: #006fda;
+}
+.userCont h1 {
+  font-size: 40px;
+}
+.userCont .cardCont {
+  /* border: 2px saddlebrown solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ----------------------------- bottom Section -------------------- */
+.bottomSect {
+  /* border: 2px solid red; */
+  /* height: 80vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomCont {
+  /* border: 2px solid black; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 20px;
+}
+.bottomCont img {
+  width: 500px;
+}
+.bottomCont .content {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.content h1 {
+  font-size: 30px;
+}
+.content p {
+  /* font-size: 20px; */
+  text-align: start;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+b {
+  color: #131313;
+  font-size: 18px;
 }
