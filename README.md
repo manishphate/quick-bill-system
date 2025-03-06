@@ -55,6 +55,6 @@ Backend Integration (Future): Transition to full-stack functionality with user a
 
 - [Manish Phate](https://github.com/manishphate)
 - [Rohit Singh](https://github.com/ThakurRohitSingh)
-- [Safwan]()
+- [Safwan](https://github.com/mrsaffu)
 - [Aarif]()
 
